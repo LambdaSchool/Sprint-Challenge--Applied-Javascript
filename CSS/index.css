@@ -302,3 +302,6 @@ body {
   width: 100%;
   display: none;
 }
+.carousel .image-active {
+  display: block;
+}
