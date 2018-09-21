@@ -34,8 +34,15 @@
     right: 25px;
     transform: translate(0, -50%);
   }
-  img {
+  .img-null {
+    width: 0%;
+    transition: 200ms;
+    visibility: hidden;
+  }
+  .img-show {
     .width-100();
-    display: none;
+    transition: 200ms;
+    visibility: visible;
+    z-index: -1;
   }
 }

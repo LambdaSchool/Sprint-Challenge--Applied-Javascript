@@ -298,7 +298,14 @@ body {
   right: 25px;
   transform: translate(0, -50%);
 }
-.carousel img {
+.carousel .img-null {
+  width: 0%;
+  transition: 200ms;
+  visibility: hidden;
+}
+.carousel .img-show {
   width: 100%;
-  display: none;
+  transition: 200ms;
+  visibility: visible;
+  z-index: -1;
 }
