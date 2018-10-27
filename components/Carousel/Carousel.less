@@ -1,20 +1,24 @@
 .carousel {
   .width-100();
+  border: 10px ridge @lambda-times-color-primary;
   .flex(center, center);
   height: 500px;
   position: relative;
   overflow: hidden;
   margin-top: 16px;
+  transition: all .8s ease-in-out;
   @media(min-width: 1200px){
     width: 1200px;
   }
   .left-button, .right-button {
-    .flex(center);
+    transition: all .8s ease-in-out;
+    .flex(center, center);
     color: @lambda-times-color-white;
     background-color: @lambda-times-color-primary;
     font-size: 40px;
     border-radius: 50%;
     position: absolute;
+    padding-bottom: 4px;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -28,14 +32,18 @@
     top: 50%; 
     left: 25px;
     transform: translate(0, -50%);
+    padding-right: 3px;
   }
   .right-button {
     top: 50%; 
+    padding-left: 3px;
     right: 25px;
     transform: translate(0, -50%);
   }
   img {
     .width-100();
     display: none;
+    opacity: 0;
   }
+
 }

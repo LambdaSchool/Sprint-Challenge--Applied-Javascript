@@ -1,32 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
 .width-100 {
   width: 100%;
 }
 .border-bottom-grey {
-  border-bottom: 1px solid lightgrey;
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v9/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v9/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+  border-bottom: 1px solid #d3d3d3;
 }
 * {
   box-sizing: border-box;
@@ -42,7 +19,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #f1f1f1;
-  color: #333;
+  color: #333333;
   font-family: 'PT Sans', sans-serif;
 }
 .top-bar {
@@ -53,7 +30,7 @@ body {
   flex-direction: row;
   position: fixed;
   height: 44px;
-  background-color: #333;
+  background-color: #333333;
 }
 .top-bar .container {
   width: 100%;
@@ -61,7 +38,7 @@ body {
   justify-content: none;
   align-items: none;
   flex-direction: row;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: 1px;
   padding: 0 10px;
 }
@@ -118,8 +95,8 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #fff;
-  border-bottom: 1px solid lightgrey;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d3d3d3;
   width: 100%;
   height: 120px;
   margin-top: 44px;
@@ -136,7 +113,7 @@ body {
   font-weight: bold;
   flex: 8;
   text-align: center;
-  color: #000;
+  color: #000000;
 }
 .header span {
   align-self: flex-end;
@@ -154,14 +131,14 @@ body {
   flex: 1;
 }
 .tabs {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #d3d3d3;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   width: 100%;
   height: 47px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 @media (min-width: 1280px) {
   .tabs {
@@ -184,8 +161,8 @@ body {
   justify-content: none;
   align-items: center;
   flex-direction: row;
-  color: #fff;
-  background-color: #333;
+  color: #ffffff;
+  background-color: #333333;
   margin: 0 5px;
   padding: 2px 10px;
   font-size: 12px;
@@ -197,9 +174,9 @@ body {
   text-decoration: underline;
 }
 .tabs .topics .active-tab {
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #333;
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #333333;
 }
 .cards-container {
   display: flex;
@@ -216,12 +193,12 @@ body {
   }
 }
 .cards-container .card {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #d3d3d3;
   display: flex;
   justify-content: space-between;
   align-items: none;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 380px;
   margin-bottom: 16px;
   padding: 24px;
@@ -239,7 +216,7 @@ body {
 }
 .cards-container .card .author .img-container {
   padding-right: 10px;
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #d3d3d3;
   height: 40px;
 }
 .cards-container .card .author .img-container img {
@@ -253,6 +230,7 @@ body {
 }
 .carousel {
   width: 100%;
+  border: 10px ridge #333333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,6 +239,7 @@ body {
   position: relative;
   overflow: hidden;
   margin-top: 16px;
+  transition: all 0.8s ease-in-out;
 }
 @media (min-width: 1200px) {
   .carousel {
@@ -269,36 +248,41 @@ body {
 }
 .carousel .left-button,
 .carousel .right-button {
+  transition: all 0.8s ease-in-out;
   display: flex;
   justify-content: center;
-  align-items: none;
+  align-items: center;
   flex-direction: row;
-  color: #fff;
-  background-color: #333;
+  color: #ffffff;
+  background-color: #333333;
   font-size: 40px;
   border-radius: 50%;
   position: absolute;
+  padding-bottom: 4px;
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
-  color: #333;
-  background-color: #fff;
-  border: 2px solid #333;
+  color: #333333;
+  background-color: #ffffff;
+  border: 2px solid #333333;
 }
 .carousel .left-button {
   top: 50%;
   left: 25px;
   transform: translate(0, -50%);
+  padding-right: 3px;
 }
 .carousel .right-button {
   top: 50%;
+  padding-left: 3px;
   right: 25px;
   transform: translate(0, -50%);
 }
 .carousel img {
   width: 100%;
   display: none;
+  opacity: 0;
 }
