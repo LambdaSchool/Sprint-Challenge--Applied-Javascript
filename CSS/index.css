@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   background-color: #f1f1f1;
   color: #333;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 .top-bar {
   width: 100%;
@@ -301,4 +301,7 @@ body {
 .carousel img {
   width: 100%;
   display: none;
+}
+.carousel img .current-image {
+  display: block;
 }

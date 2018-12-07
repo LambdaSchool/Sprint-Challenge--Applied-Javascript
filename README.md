@@ -6,13 +6,13 @@ We've covered a lot this week. We've learned how to plug Javascript into our HTM
 
 ## Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] You are now ready to build this project with your preferred IDE
+- [ ] Fork the project into your GitHub user account
+- [ ] Clone the forked project into a directory on your machine
+- [ ] You are now ready to build this project with your preferred IDE
 
 ## Comprehension Questions
 
-Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit.  Open up the [Answers.md](Answers.md) file and record your responses there.
+Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit. Open up the [Answers.md](Answers.md) file and record your responses there.
 
 1. What is the DOM?
 2. What is an event?
@@ -28,11 +28,11 @@ We are going to create a Lambda Newspaper. The styling is modeled after the [LA 
 
 - [ ] Look through the HTML code paying particular attention to the Tabs component and the Cards components. You will notice they share a data attribute. We will be using this data attribute to determine which cards should show when each tab is selected.
 
-- [ ] Following the instructions in the `Tabs.js` file, complete the `TabLink`, and `TabCard` class components. It will look and feel very similar to the last project we worked on, but with a twist. Now, instead of one `Item` to display, we will need to display a collection of `Cards`. Think about ways to iterate over an array and manipulate each item.  **Note: You will need to un-comment the code after the lines of instructions.  The code is commented out so you can work error-free**
+- [ ] Following the instructions in the `Tabs.js` file, complete the `TabLink`, and `TabCard` class components. It will look and feel very similar to the last project we worked on, but with a twist. Now, instead of one `Item` to display, we will need to display a collection of `Cards`. Think about ways to iterate over an array and manipulate each item. **Note: You will need to un-comment the code after the lines of instructions. The code is commented out so you can work error-free**
 
 - [ ] Once you get your `Tab` component working properly add a couple more articles yourself and check out how it works.
 
-![Working Sprint Challenge Gif](./Sprint-Challenge.gif 'Example of working project')
+![Working Sprint Challenge Gif](./Sprint-Challenge.gif "Example of working project")
 
 ## Stretch Challenge
 
