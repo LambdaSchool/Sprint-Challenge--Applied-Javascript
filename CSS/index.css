@@ -301,4 +301,5 @@ body {
 .carousel img {
   width: 100%;
   display: none;
+  z-index: -10;
 }
