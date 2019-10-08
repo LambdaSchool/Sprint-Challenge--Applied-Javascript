@@ -38,6 +38,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. What is a component?
 
+
+1. What is the DOM?
+Document object model.
+
+2. What is an event?
+Something scheduled to happen based on the user interaction.
+
+3. What is an event listener?
+Its what call the event for ex. a “click” or “scroll” it call the event essentially.
+
+4. Why would we convert a NodeList into an Array?
+To manipulate it easier with array methods. 
+
+5. What is a component?
+A piece of reusable code that allows you to not repeat code if its not necessary.
+
+
+
+
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account
