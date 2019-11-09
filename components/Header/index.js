@@ -9,4 +9,34 @@
 //  </div >
 // And add it to the DOM in the .header-container component
 
-function Header() {}
+function Header() {
+    //Created All elements
+    const header = document.createElement('div');
+    header.classList.add('header');
+
+    const span = document.createElement('span');
+    span.classList.add('date');
+    span.textContent = Date()
+
+    const h1 = document.createElement('h1')
+    h1.textContent = `Lambda Times`
+
+    const span2 = document.createElement('span')
+    span2.classList.add('temp');
+    span2.textContent = '98 degrees';
+
+    // Appended All Elements
+    header.appendChild(span)
+    header.appendChild(h1)
+    header.appendChild(span2)
+
+    return header
+}
+
+
+//Select dom Element to appened header function to. 
+const container = document.querySelector('.header-container')
+
+container.appendChild(Header())
+
+// axios.get('https://api.openweathermap.org/data/2.5/weather?q=London')
